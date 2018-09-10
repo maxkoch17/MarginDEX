@@ -1,0 +1,24 @@
+{
+  "name": "margindex",
+  "main": "public/main.js",
+  "version": "0.1.0",
+  "private": true,
+  "repository": "https://github.com/kevinzittlau/MarginDEX.git",
+  "dependencies": {
+    "@material-ui/core": "^3.0.3",
+    "electron-better-ipc": "^0.1.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-scripts": "1.1.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "electron-start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^2.0.8"
+  }
+}
