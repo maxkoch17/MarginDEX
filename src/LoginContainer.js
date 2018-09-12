@@ -1,5 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
+import './Components/input.css'
 
 class LoginContainer extends React.Component {
   constructor(props){
@@ -23,15 +24,19 @@ class LoginContainer extends React.Component {
   }
 
   render(){
-    return
-    <div className="LoginBox">
+    return(
+    /*<div className="LoginBox">
 				<form onSubmit={this.handleSubmit}>
 					<div className="form-group">
-						<Input
+            <label>
+              Seed
+            </label>
+						<input
+              className="Input"
 							ref={this.passwordInputRef}
 							onChange={this.handlePasswordInputChange}
 							type="password"
-							placeholder={t('password')}
+							placeholder={"Seed"}
 							value={this.state.passwordInputValue}
 							autoFocus
 							required
@@ -39,10 +44,23 @@ class LoginContainer extends React.Component {
 						/>
 					</div>
 					<div className="form-group form-group-2">
-						<Button primary fullwidth type="submit" value={t('login')} disabled={!this.state.passwordInputValue || this.state.isLoggingIn}/>
+						<button primary fullwidth type="submit" value={"Submit"}
+            />
 					</div>
 				</form>
-			</div>
+			</div>*/
+      <div className="container">
+
+  <div className="demo-flex-spacer"></div>
+
+  <div className="webflow-style-input">
+    <input className="" type="email" placeholder="What's your email?"></input>
+    <button type="submit"><i className="icon ion-android-arrow-forward"></i></button>
+  </div>
+
+  <div className="demo-flex-spacer"></div>
+  </div>
+    )
   }
 
   componentDidMount(){
@@ -53,4 +71,4 @@ class LoginContainer extends React.Component {
 
   }
 }
-export default LoginContainerCo;
+export default LoginContainer;

@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { render } from 'react-dom'
+import LoginContainer from "./LoginContainer.js";
 
 // Import some styles
 //import './styles/App.css'
@@ -14,6 +15,7 @@ class App extends React.Component {
         <h1>Hello, this is your first Electron app!</h1>
 
         <p>I hope you enjoy using this electron react app.</p>
+        <LoginContainer/>
       </div>
     )
   }
